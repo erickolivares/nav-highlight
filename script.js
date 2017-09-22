@@ -1,7 +1,5 @@
 jQuery(document).ready(function( $ ) {
 
-	widthFullScreen();
-
 	var navItems = $("nav li"); //nav list items
 	var modId = $("section"); //divs with ID's
 	
@@ -54,7 +52,6 @@ jQuery(document).ready(function( $ ) {
 	};
 
 	window.onresize = function() {
-		widthFullScreen();
 		var currentpos = $(document).scrollTop();
 		lookup(currentpos);
 	}
